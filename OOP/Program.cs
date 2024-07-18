@@ -22,7 +22,5 @@
         Console.WriteLine(person.Balance);
 
         Console.WriteLine("");
-
-
     }
 }
