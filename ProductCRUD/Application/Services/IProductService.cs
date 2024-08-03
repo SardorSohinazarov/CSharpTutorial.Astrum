@@ -7,7 +7,7 @@ namespace ProductCRUD.Application.Services
         Product AddProduct(Product product);
         List<Product> GetProducts();
         List<Product> GetProductByName(string name);
-        Product GetProductById(Guid id);
+        (Guid Id, string Name, double Price)? GetProductById(Guid id);
         Product UpdateProduct(Guid id, Product product);
         Product DeleteProductById(Guid id);
     }

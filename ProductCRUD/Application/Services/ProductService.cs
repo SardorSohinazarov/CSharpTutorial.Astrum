@@ -42,7 +42,7 @@ namespace ProductCRUD.Application.Services
             return product;
         }
 
-        public Product GetProductById(Guid id)
+        public (Guid Id, string Name, double Price)? GetProductById(Guid id)
         {
             var product = _products.FirstOrDefault(x => x.Id == id);
 
@@ -51,7 +51,7 @@ namespace ProductCRUD.Application.Services
                 return null;
             }
 
-            return product;
+            return (product.Id, product.Name, product.Price);
         }
 
         public List<Product> GetProductByName(string name)
@@ -68,13 +68,18 @@ namespace ProductCRUD.Application.Services
 
         public Product UpdateProduct(Guid id, Product product)
         {
-            var existProduct = GetProductById(id);
-
-            //Mapping
-            existProduct.Name = product.Name;
-            existProduct.Price = product.Price;
-
-            return existProduct;
+            throw new NotImplementedException();
         }
+
+        /*  public Product UpdateProduct(Guid id, Product product)
+          {
+              var existProduct = GetProductById(id);
+
+              //Mapping
+              existProduct.Name = product.Name;
+              existProduct.Price = product.Price;
+
+              return existProduct;
+          }*/
     }
 }
