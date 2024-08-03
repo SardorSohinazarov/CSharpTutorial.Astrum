@@ -39,9 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD", "CRUD\CRUD.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nimadur", "Nimadur\Nimadur.csproj", "{D157922D-1668-44DC-A1BA-9701FC8A22A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{5D4B90C8-BD3C-40A6-B443-160F81B29590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Exceptions.csproj", "{5D4B90C8-BD3C-40A6-B443-160F81B29590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File va FileInfo", "File va FileInfo\File va FileInfo.csproj", "{2599ADAB-E0C5-4926-9C1D-959F76B8E017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "File va FileInfo", "File va FileInfo\File va FileInfo.csproj", "{2599ADAB-E0C5-4926-9C1D-959F76B8E017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDWithFile", "CRUDWithFile\CRUDWithFile.csproj", "{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{2599ADAB-E0C5-4926-9C1D-959F76B8E017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2599ADAB-E0C5-4926-9C1D-959F76B8E017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2599ADAB-E0C5-4926-9C1D-959F76B8E017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
