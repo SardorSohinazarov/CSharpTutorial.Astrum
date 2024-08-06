@@ -43,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "File va FileInfo", "File va FileInfo\File va FileInfo.csproj", "{2599ADAB-E0C5-4926-9C1D-959F76B8E017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDWithFile", "CRUDWithFile\CRUDWithFile.csproj", "{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDWithFile", "CRUDWithFile\CRUDWithFile.csproj", "{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON", "JSON\JSON.csproj", "{1814835D-15E1-49F3-BE4F-F67829C7C5A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCRUD", "GenericCRUD\GenericCRUD.csproj", "{D45E3DAA-0B9C-45ED-AB3F-CC633177DC79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,14 @@ Global
 		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59FBC3ED-362F-4F9F-A660-7D69D5C23B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1814835D-15E1-49F3-BE4F-F67829C7C5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1814835D-15E1-49F3-BE4F-F67829C7C5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1814835D-15E1-49F3-BE4F-F67829C7C5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1814835D-15E1-49F3-BE4F-F67829C7C5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45E3DAA-0B9C-45ED-AB3F-CC633177DC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45E3DAA-0B9C-45ED-AB3F-CC633177DC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45E3DAA-0B9C-45ED-AB3F-CC633177DC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45E3DAA-0B9C-45ED-AB3F-CC633177DC79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

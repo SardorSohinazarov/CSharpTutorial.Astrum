@@ -1,21 +1,31 @@
-﻿using System.Text;
+﻿using CRUDWithFile.Models;
+using CRUDWithFile.Repository;
 
 internal class Program
 {
     private static void Main()
     {
-        StringBuilder soz2 = new StringBuilder("");
+        BookRepository service = new BookRepository();
+        service.Add(new Book() { Id = 1, Title = "Sardor", AuthorName = "Sardor2", Genre = "Romatic" });
+        service.Delete(1);
 
-        for (int i = 0; i < 100; i++)
+        foreach (var book in service.GetBooks())
         {
-            soz2.Append(i);
+            Console.WriteLine(book.Id + book.Title + book.AuthorName + book.Genre);
         }
 
-        soz2.Insert(2, "Sardor");
-        soz2.Remove(2, 6);
+        /*  StringBuilder soz2 = new StringBuilder("");
 
-        Console.WriteLine(soz2);
+          for (int i = 0; i < 100; i++)
+          {
+              soz2.Append(i);
+          }
 
+          soz2.Insert(2, "Sardor");
+          soz2.Remove(2, 6);
+
+          Console.WriteLine(soz2);
+  */
 
         /* Console.WriteLine("Hello, World!");
 
