@@ -1,0 +1,1 @@
+[{"Id":1,"Name":"Xalqlar do\u0027stligi","Address":"Toshkent shaxar","Capasity":4200,"Rows":100,"Sits":42},{"Id":1,"Name":"Xalqlar do\u0027stligi","Address":"Toshkent shaxar","Capasity":4200,"Rows":100,"Sits":42},{"Id":1,"Name":"Xalqlar do\u0027stligi","Address":"Toshkent shaxar","Capasity":4200,"Rows":100,"Sits":42}]

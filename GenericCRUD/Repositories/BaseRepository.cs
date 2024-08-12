@@ -20,7 +20,7 @@ namespace GenericCRUD.Repositories
             var item = GetById(key);
             values.Remove(item);
 
-            File.WriteAllText(GetFullPath(), JsonSerializer.Serialize(values));
+            File.WriteAllText(GetFullPath(), JsonSerializer.Serialize(values, options: new JsonSerializerOptions() { WriteIndented = true }));
 
             return item;
         }
@@ -70,7 +70,7 @@ namespace GenericCRUD.Repositories
 
         string GetFullPath()
         {
-            return folderPath + "\\" + typeof(TValue).Name + ".txt";
+            return Path.Combine(folderPath, typeof(TValue).Name + ".txt");
         }
     }
 }

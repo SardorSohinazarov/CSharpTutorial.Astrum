@@ -1,16 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-using GenericCRUD.Models;
-using GenericCRUD.Repositories.TicketsRepository;
+﻿using GenericCRUD.Services.EventsService;
 
-Console.WriteLine("Hello, World!");
+/*IEventLocationsService eventLocationsService = new EventLocationService();
 
-ITickectRepository tickectRepository = new TicketRepository();
-
-tickectRepository.Insert(new Ticket() { Id = 1, Title = "Sardor" });
-
-var values = tickectRepository.GetAll();
-
-foreach (var value in values)
+eventLocationsService.CreateEventLocation(new GenericCRUD.Models.EventLocation()
 {
-    Console.WriteLine(value.Title);
-}
+    Id = 1,
+    Name = "Xalqlar do'stligi",
+    Capasity = 4200,
+    Rows = 100,
+    Sits = 42,
+    Address = "Toshkent shaxar",
+});
+
+var events = eventLocationsService.GetAll();
+
+foreach (var eventLocation in events)
+{
+    Console.WriteLine(JsonSerializer.Serialize(eventLocation, new JsonSerializerOptions() { WriteIndented = true }));
+}*/
+
+IEventService eventService = new EventService();
+eventService.CreateEvent(new GenericCRUD.Models.Event()
+{
+    Id = 1,
+    Name = "Ozodbek Nazarbekov",
+    Price = 1000000,
+    Start = new DateTime(2024, 11, 1, 21, 0, 0),
+    End = new DateTime(2024, 12, 1, 19, 0, 0),
+    EventLocationId = 1
+});

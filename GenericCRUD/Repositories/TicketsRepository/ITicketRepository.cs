@@ -2,7 +2,7 @@
 
 namespace GenericCRUD.Repositories.TicketsRepository
 {
-    internal interface ITickectRepository : IBaseRepository<int, Ticket>
+    internal interface ITicketRepository : IBaseRepository<int, Ticket>
     {
     }
 }
